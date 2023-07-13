@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <title>HTML/CSS Modulul 4 - Lectia 8</title>
+    <style>
+      .icon {
+        height: 24px;
+        width: 24px;
+      }
+
+      .icon-orangered {
+        --icon-color: orangered;
+      }
+
+      .line-icon-colors {
+        --icon-color-1: red;
+        --icon-color-2: blue;
+        --icon-color-3: yellow;
+      }
+
+      .colored-text {
+        color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container example-page">
+      <h1 class="heading-primary">Sprite SVG</h1>
+      <section>
+        <p>
+          Poti afla mai multe despre optimizarea svg din acest articol:
+          <a
+            href="https://www.svgbackgrounds.com/how-to-optimize-and-reduce-the-file-size-of-svg-images/"
+            >Articol despre optimizare</a
+          >
+        </p>
+        <p>
+          Putem folosi SVGO pentru a face optimizarea
+          <a href="https://jakearchibald.github.io/svgomg/" alt="SVGO">Link</a>
+        </p>
+        <article>
+          <div class="lesson-example">
+            <h2>Not-optimised</h2>
+            <svg class="icon">
+              <use href="./icon-defs.svg#icon-unoptimized" />
+            </svg>
+          </div>
+          <div class="lesson-example">
+            <h2>Optimised</h2>
+            <svg class="icon">
+              <use href="./icon-defs.svg#icon-optimized" />
+            </svg>
+          </div>
+          <div class="lesson-example">
+            <h2>fill: currentColor</h2>
+            <p>
+              Daca folosim <em>fill:currentColor</em> svg-ul se va colora in
+              functie de culoarea textului parintelui
+            </p>
+            <div class="colored-text">
+              <svg class="icon">
+                <use href="./icon-defs.svg#icon-optimized" />
+              </svg>
+            </div>
+          </div>
+          <div class="lesson-example">
+            <h2>fill: var(--variabila-css)</h2>
+            <p>
+              Daca folosim <em>fill:var(--variabila-css)</em> svg-ul se va
+              colora in functie de ce avem noi setat in variabila
+            </p>
+            <svg class="icon icon-orangered">
+              <use href="./icon-defs.svg#icon-optimized-var" />
+            </svg>
+          </div>
+          <div class="lesson-example">
+            <h2>Multiple colors</h2>
+            <p>
+              Putem folosi mai multe variabile CSS si le putem folosi si pentru
+              alte proprietati in SVG (ex. stroke)
+            </p>
+            <svg class="line-icon-colors">
+              <use href="./icon-defs.svg#three-lines" />
+            </svg>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

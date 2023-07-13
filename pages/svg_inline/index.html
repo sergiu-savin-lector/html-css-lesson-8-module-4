@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <title>HTML/CSS Modulul 4 - Lectia 8</title>
+    <style>
+      .icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .close-icon {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url("./close-icon.svg") no-repeat center center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container example-page">
+      <h1 class="heading-primary">
+        Cum folosim svg? <em>&lt;img&gt;</em>, <em>background:</em>,
+        <em>&lt;svg&gt;</em>
+      </h1>
+      <section>
+        <div class="lesson-example">
+          <h2>Tag-ul &lt;img&gt;</h2>
+          <img class="icon" src="./close-icon.svg" alt="Close" />
+        </div>
+
+        <div class="lesson-example">
+          <h2>Proprietatea background:</h2>
+          <i class="close-icon"></i>
+        </div>
+
+        <div class="lesson-example">
+          <h2>Inline svg:</h2>
+          <svg
+            width="32px"
+            height="32px"
+            viewBox="0 0 40 40"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:space="preserve"
+            xmlns:serif="http://www.serif.com/"
+            style="
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              stroke-linejoin: round;
+              stroke-miterlimit: 2;
+            "
+          >
+            <g id="close" transform="matrix(0.15625,0,0,0.15625,0,0)">
+              <rect x="0" y="0" width="32" height="32" style="fill: none" />
+              <g
+                id="HamburgerOpen"
+                transform="matrix(1.59175,0,0,1.59175,-75.7449,-75.745)"
+              >
+                <g
+                  transform="matrix(0.530417,0.530417,-0.595902,0.595902,-73.6855,-145.728)"
+                >
+                  <path
+                    d="M548.106,43.361C548.106,42.313 547.15,41.463 545.973,41.463L350.329,41.463C349.152,41.463 348.196,42.313 348.196,43.361L348.196,77.536C348.196,78.584 349.152,79.434 350.329,79.434L545.973,79.434C547.15,79.434 548.106,78.584 548.106,77.536L548.106,43.361Z"
+                    style="fill: rgb(255, 0, 0)"
+                  />
+                </g>
+                <g
+                  transform="matrix(-0.530417,0.530417,0.595902,0.595902,329.686,-145.728)"
+                >
+                  <path
+                    d="M548.106,43.361C548.106,42.313 547.15,41.463 545.973,41.463L350.329,41.463C349.152,41.463 348.196,42.313 348.196,43.361L348.196,77.536C348.196,78.584 349.152,79.434 350.329,79.434L545.973,79.434C547.15,79.434 548.106,78.584 548.106,77.536L548.106,43.361Z"
+                    style="fill: rgb(255, 0, 0)"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

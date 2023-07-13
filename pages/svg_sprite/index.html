@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <title>HTML/CSS Modulul 4 - Lectia 8</title>
+    <style>
+      /*
+      .text-red {
+        color: blue;
+      }
+      */
+
+      .icon-container {
+        justify-content: center;
+        background: lightblue;
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 16px;
+      }
+
+      .icon {
+        height: 24px;
+        width: 24px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container example-page">
+      <h1 class="heading-primary">Sprite SVG</h1>
+      <section>
+        <p>
+          Putem folosi Icomoon ca sa nu facem noi manual procesul de adaugare
+          SVG
+          <a href="https://icomoon.io/app/#/select" alt="Icomoon">Link</a>
+        </p>
+        <article class="lesson-example text-red">
+          <h2>Heading Icon</h2>
+          <svg class="icon">
+            <use href="./symbol-defs.svg#icon-Heading" />
+          </svg>
+        </article>
+        <article class="lesson-example text-red">
+          <h2>Paragraph Icon</h2>
+          <span class="icon-container">
+            <svg class="icon">
+              <use href="./symbol-defs.svg#icon-Paragraph" />
+            </svg>
+            Paragraph
+          </span>
+        </article>
+        <article>
+          <h2>Title Icon</h2>
+          <span class="icon-container">
+            <svg class="icon">
+              <use href="./symbol-defs.svg#icon-Title" />
+            </svg>
+            Title
+          </span>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

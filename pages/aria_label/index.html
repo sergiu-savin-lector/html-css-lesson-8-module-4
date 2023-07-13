@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <title>HTML/CSS Modulul 4 - Lectia 8</title>
+    <style></style>
+  </head>
+  <body>
+    <main class="container example-page">
+      <h1 class="heading-primary">Atributul aria-label</h1>
+      <p>
+        Notă: <em>aria-label</em> este „vizibil” doar pentru tehnologiile de
+        asistență. Dacă informațiile sunt suficient de importante pentru a fi
+        adăugate pentru utilizatorii AT, luați în considerare să le faceți
+        vizibile pentru toți utilizatorii.
+      </p>
+      <a
+        href="https://www.smashingmagazine.com/2021/05/accessible-svg-patterns-comparison/"
+      >
+        Articol despre accesibilatea iconitelor
+      </a>
+      <section>
+        <button aria-label="Close">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            width="17"
+            height="17"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m.967 14.217 5.8-5.906-5.765-5.89L3.094.26l5.783 5.888L14.66.26l2.092 2.162-5.766 5.889 5.801 5.906-2.092 2.162-5.818-5.924-5.818 5.924-2.092-2.162Z"
+              fill="#000"
+            />
+          </svg>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
